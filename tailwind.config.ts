@@ -17,6 +17,9 @@ const config: Config = {
         poppins: ["var(--font-poppins)"],
         openSans: ["var(--font-open-sans)"],
       },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(90deg, #1E2A5D0A, #303E820A, #3C509D0A)',
+      }
     },
   },
   plugins: [],
