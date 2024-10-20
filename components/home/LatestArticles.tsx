@@ -70,7 +70,7 @@ const useGetData = ({
     const end = start + perPage;
 
     setData(Alldata.slice(start, end));
-  }, [perPage, currentPage]);
+  }, [perPage, currentPage, Alldata]);
 
   return {
     data,
