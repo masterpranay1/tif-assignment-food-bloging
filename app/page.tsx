@@ -1,8 +1,9 @@
+import Hero from "@/components/home/Hero";
 
 export default function Home() {
   return (
-    <section>
-      <h1>Home</h1>
-    </section>
+    <main className="w-full min-h-screen">
+      <Hero />
+    </main>
   );
 }
