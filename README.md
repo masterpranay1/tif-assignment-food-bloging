@@ -4,6 +4,7 @@ This repository contains the assignment project for The Internet Folks. Below is
 
 ## Folder Structure
 
+```plaintext
 app/
 ├── fonts/
 │   ├── favicon.ico
@@ -19,6 +20,7 @@ app/
 │   ├── ui/
 │   │   ├── Button.tsx
 public/
+```
 
 
 ## Getting Started
