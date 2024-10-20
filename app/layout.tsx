@@ -1,16 +1,23 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Source_Sans_3, Poppins, Open_Sans } from "next/font/google";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const sourceSans3 = Source_Sans_3({
+  subsets: ["latin"],
+  variable: "--font-source-sans-3",
+  weight: ["700"],
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  variable: "--font-poppins",
+  weight: ["400", "500", "600", "700"],
+});
+
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  variable: "--font-open-sans",
+  weight: ["400", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -26,7 +33,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`
+          ${sourceSans3.variable} 
+          ${poppins.variable} 
+          ${openSans.variable} 
+          antialiased`}
       >
         {children}
       </body>

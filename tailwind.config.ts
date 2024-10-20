@@ -12,6 +12,11 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        sourceSans3: ["var(--font-source-sans-3)"],
+        poppins: ["var(--font-poppins)"],
+        openSans: ["var(--font-open-sans)"],
+      },
     },
   },
   plugins: [],
